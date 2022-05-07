@@ -11,3 +11,7 @@ patches:
       version: v1
       kind: Service
       name: front-end
+images:
+- name: weaveworksdemos/front-end
+  newName: ghcr.io/zxkane/weaveworksdemos/front-end
+  newTag: 0.3.13-rc0
