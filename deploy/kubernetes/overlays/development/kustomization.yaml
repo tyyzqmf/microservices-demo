@@ -1,17 +1,17 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../base
+- ../../base
 patches:
-  - patch: |-
-      - op: replace
-        path: /metadata/annotations/external-dns.alpha.kubernetes.io~1hostname
-        value: socks-dev.test.kane.mx
-    target:
-      version: v1
-      kind: Service
-      name: front-end
+- patch: |-
+    - op: replace
+      path: /metadata/annotations/external-dns.alpha.kubernetes.io~1hostname
+      value: socks-dev.test.kane.mx
+  target:
+    version: v1
+    kind: Service
+    name: front-end
 images:
 - name: weaveworksdemos/front-end
   newName: ghcr.io/zxkane/weaveworksdemos/front-end # {"$imagepolicy": "sock-shop:sock-shop-front-end:name"}
-  newTag: 0.3.13-rc0 # {"$imagepolicy": "sock-shop:sock-shop-front-end:tag"}
+  newTag: 0.3.13-rc1 # {"$imagepolicy": "sock-shop:sock-shop-front-end:tag"}
