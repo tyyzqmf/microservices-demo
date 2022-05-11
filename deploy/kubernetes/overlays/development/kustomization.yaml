@@ -14,4 +14,4 @@ patches:
 images:
 - name: weaveworksdemos/front-end
   newName: ghcr.io/zxkane/weaveworksdemos/front-end # {"$imagepolicy": "sock-shop:sock-shop-front-end:name"}
-  newTag: 0.3.13-rc2 # {"$imagepolicy": "sock-shop:sock-shop-front-end:tag"}
+  newTag: 0.3.13-rc3 # {"$imagepolicy": "sock-shop:sock-shop-front-end:tag"}
